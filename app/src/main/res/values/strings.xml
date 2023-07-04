@@ -16,6 +16,6 @@
     <string name="downloaded_to_gallery">"Сохранено в галерею"</string>
     <string name="open">В галерею</string>
     <string name="text_add_card">Нажмите на кнопку, чтобы создать дневник вашего питомца</string>
-    <string name="text_button">+</string>
+    <string name="text_button">Сохранить</string>
 </resources>
 

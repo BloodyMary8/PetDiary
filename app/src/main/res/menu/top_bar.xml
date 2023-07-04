@@ -6,4 +6,5 @@
         android:title="@string/top_bar_header"
         android:icon="@drawable/ic_top_bar_settings"
         app:showAsAction="ifRoom"/>
+
 </menu>

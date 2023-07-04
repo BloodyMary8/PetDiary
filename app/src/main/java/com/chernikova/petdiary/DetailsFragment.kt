@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.chernikova.petdiary.databinding.FragmentDetailsBinding
-import com.chernikova.petdiary.databinding.FragmentFavoriteBinding
 
 
 class DetailsFragment : Fragment(R.layout.fragment_details) {
@@ -16,7 +15,6 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         super.onViewCreated(view, savedInstanceState)
         val binding = FragmentDetailsBinding.bind(view)
         fragmentDetailsBinding = binding
-
 
     }
     override fun onDestroyView() {
