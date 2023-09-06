@@ -1,11 +1,10 @@
-package com.chernikova.petdiary
-
+package com.chernikova.petdiary.fragments
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.chernikova.petdiary.R
 import com.chernikova.petdiary.databinding.FragmentDetailsBinding
-
 
 class DetailsFragment : Fragment(R.layout.fragment_details) {
 
@@ -15,6 +14,8 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         super.onViewCreated(view, savedInstanceState)
         val binding = FragmentDetailsBinding.bind(view)
         fragmentDetailsBinding = binding
+
+        binding.textReceiver.text = arguments?.getString("input")
 
     }
     override fun onDestroyView() {

@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">PetDiary</string>
+    <string name="app_name">Дневник питомца</string>
     <string name="menu_favorites_title">Избранное</string>
     <string name="menu_watch_later_title">Посмотреть позже</string>
     <string name="menu_selections_title">Подборки</string>
     <string name="menu_home_title_text">Главная</string>
     <string name="top_bar_header">Мои домашние питомцы</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_settings_title_text">Настройки</string>
     <string name="radio_button_popular">Популярные</string>
     <string name="radio_button_top_rated">Топ</string>
@@ -16,6 +15,15 @@
     <string name="downloaded_to_gallery">"Сохранено в галерею"</string>
     <string name="open">В галерею</string>
     <string name="text_add_card">Нажмите на кнопку, чтобы создать дневник вашего питомца</string>
-    <string name="text_button">Сохранить</string>
+    <string name="header_card_pet">Добавьте данные о своем питомце</string>
+    <string name="text_button">+</string>
+    <string name="text_button_back">назад</string>
+    <string name="text_button1">Сохранить</string>
+    <string name="hit_name">Имя питомца</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="back">Назад</string>
+
+
 </resources>
 

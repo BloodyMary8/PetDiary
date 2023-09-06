@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="White15TextStyle">
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <dimen name="text_15">15</dimen>
+</resources>
