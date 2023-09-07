@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.chernikova.petdiary.databinding.ActivityMainBinding
+import com.chernikova.petdiary.fragments.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +17,40 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initNavigation()
 
+        //Запускаем фрагмент при старте
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.fragment_placeholder, HomeFragment())
+            .addToBackStack(null)
+            .commit()
+
+    }
+
+    fun launch_create_card() {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_placeholder, DetailsFragment())
+            .addToBackStack(null)
+            .commit()
+    }
+
+    fun passData(editext: String) {
+        val bundle = Bundle()
+        bundle.putString("input", editext)
+
+        val frag3 = ThreeFragment()
+        frag3.arguments = bundle
+
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_placeholder, frag3)
+            .addToBackStack(null)
+            .commit()
+    }
+
+    private fun initNavigation(){
         binding.bottomNavigation.setOnItemSelectedListener {
 
             when (it.itemId) {
@@ -44,6 +78,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
     private fun checkFragmentExistence(tag: String): Fragment? = supportFragmentManager.findFragmentByTag(tag)
 
     private fun changeFragment(fragment: Fragment, tag: String) {

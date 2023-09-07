@@ -1,11 +1,11 @@
-package com.chernikova.petdiary
-
+package com.chernikova.petdiary.fragments
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.chernikova.petdiary.MainActivity
+import com.chernikova.petdiary.R
 import com.chernikova.petdiary.databinding.FragmentDetailsBinding
-
 
 class DetailsFragment : Fragment(R.layout.fragment_details) {
 
@@ -16,6 +16,9 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         val binding = FragmentDetailsBinding.bind(view)
         fragmentDetailsBinding = binding
 
+        binding.buttonSave.setOnClickListener {
+            (activity as MainActivity).passData(binding.editNamePet.text.toString())
+        }
     }
     override fun onDestroyView() {
         // Consider not storing the binding instance in a field, if not needed.

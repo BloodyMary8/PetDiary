@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable-v24/ic_channel_foreground.xml" value="0.185" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.185" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/edit.xml" value="0.185" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/ic_baseline_arrow_back.xml" value="0.196" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/ic_baseline_pets_24.xml" value="0.185" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/ic_channel_background.xml" value="0.166" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/ic_favorite.xml" value="0.166" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/ic_home.xml" value="0.166" />
@@ -13,17 +17,27 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/shape.xml" value="0.195" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/drawable/shapebackground.xml" value="0.166" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_details.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_details.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_favorite.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_list.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_list_pet.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_recycler.xml" value="0.15433946130825138" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_setting.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/fragment_three.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/navigation.xml" value="0.17395833333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/navigation_menu.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/pet_item.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/layout/tool_bar.xml" value="0.22359982898674646" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/menu/activity_main_toolbar.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/menu/navigation_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/menu/tool_bar.xml" value="0.14407866609662248" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/menu/top_bar.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/menu/top_bar_back.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/mipmap-anydpi-v26/ic_channel.xml" value="0.166" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.166" />
         <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.166" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/PetDiary/app/src/main/res/navigation/navigation.xml" value="0.21" />
       </map>
     </option>
   </component>

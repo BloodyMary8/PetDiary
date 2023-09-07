@@ -9,6 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#BAB4AC</color>
     <color name="blue">#83CAEA</color>
-
+    <color name="toolbar_orange">#6B37FD</color>
 
 </resources>
