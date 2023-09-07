@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.chernikova.petdiary.databinding.ActivityMainBinding
-import com.chernikova.petdiary.fragments.DetailsFragment
-import com.chernikova.petdiary.fragments.FavoriteFragment
-import com.chernikova.petdiary.fragments.HomeFragment
-import com.chernikova.petdiary.fragments.SettingFragment
+import com.chernikova.petdiary.fragments.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,16 +28,24 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun launch_create_card() {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_placeholder, DetailsFragment())
+            .addToBackStack(null)
+            .commit()
+    }
+
     fun passData(editext: String) {
         val bundle = Bundle()
         bundle.putString("input", editext)
 
-        val frag2 = DetailsFragment()
-        frag2.arguments = bundle
+        val frag3 = ThreeFragment()
+        frag3.arguments = bundle
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.fragment_placeholder, DetailsFragment() )
+            .replace(R.id.fragment_placeholder, frag3)
             .addToBackStack(null)
             .commit()
     }

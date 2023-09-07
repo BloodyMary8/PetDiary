@@ -26,8 +26,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.button.setOnClickListener {
-            (activity as MainActivity).passData(binding.editText.text.toString())
+        binding.buttonPlus.setOnClickListener {
+            (activity as MainActivity).launch_create_card()
         }
 
     }

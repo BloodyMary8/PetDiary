@@ -1,28 +1,27 @@
 package com.chernikova.petdiary.fragments
 
 import android.os.Bundle
-import android.view.View
 import androidx.fragment.app.Fragment
-import com.chernikova.petdiary.MainActivity
+import android.view.View
 import com.chernikova.petdiary.R
 import com.chernikova.petdiary.databinding.FragmentDetailsBinding
+import com.chernikova.petdiary.databinding.FragmentThreeBinding
 
-class DetailsFragment : Fragment(R.layout.fragment_details) {
+class ThreeFragment : Fragment(R.layout.fragment_three) {
 
-    private var fragmentDetailsBinding: FragmentDetailsBinding? = null
+    private var fragmentThreeBinding: FragmentThreeBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val binding = FragmentDetailsBinding.bind(view)
-        fragmentDetailsBinding = binding
+        val binding = FragmentThreeBinding.bind(view)
+        fragmentThreeBinding = binding
 
-        binding.buttonSave.setOnClickListener {
-            (activity as MainActivity).passData(binding.editNamePet.text.toString())
-        }
+        binding.textReceiver.text = arguments?.getString("input")
+
     }
     override fun onDestroyView() {
         // Consider not storing the binding instance in a field, if not needed.
-        fragmentDetailsBinding = null
+        fragmentThreeBinding = null
         super.onDestroyView()
     }
 }

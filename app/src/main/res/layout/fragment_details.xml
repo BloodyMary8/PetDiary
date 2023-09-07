@@ -3,69 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/grey"
-    android:id="@+id/frag2"
+    android:id="@+id/fragment_details"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:elevation="@dimen/size_1"
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="360dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/hint_create_card"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:navigationIcon="@drawable/ic_baseline_arrow_back" />
-
+        app:layout_constraintBottom_toTopOf="@id/poster" />
 
     <FrameLayout
         android:id="@+id/poster"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/shape"
-        app:layout_constraintBottom_toTopOf="@id/pet_name"
+        app:layout_constraintBottom_toTopOf="@id/edit_name_pet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <EditText
-        android:id="@+id/pet_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/poster"/>
-
-    <TextView
-        android:id="@+id/show_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pet_name"/>
-
-    <TextView
-        android:id="@+id/text_receiver"
+        android:id="@+id/edit_name_pet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="16dp"
         android:textAlignment="center"
-        android:textSize="130sp"
         android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/poster"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/show_name"
-        app:layout_constraintVertical_chainStyle="spread"/>
+        app:layout_constraintBottom_toTopOf="@id/button_save"
+        android:hint="Введите имя питомца"
+        android:autofillHints="text" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_save"
         android:layout_width="250dp"
         android:layout_height="55dp"
         android:layout_marginBottom="10dp"
@@ -75,6 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_name_pet"
         app:layout_constraintVertical_chainStyle="spread" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
